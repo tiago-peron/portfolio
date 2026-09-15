@@ -20,7 +20,7 @@
     <p class="project-desc">{{ project().description }}</p>
     <div>
       @for (tech of project().techs; track tech.name) {
-        <span class="tech-badge" [class]="'badge-' + tech.color"> {{ tech.name }}</span>
+        <span class="tech-badge"> {{ tech.name }}</span>
       }
     </div>
   </div>

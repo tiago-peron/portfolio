@@ -4,9 +4,9 @@ import {AfterViewInit, Directive, ElementRef, inject} from '@angular/core';
   selector: '[appFadeUp]',
 })
 export class FadeUp implements AfterViewInit {
-  private el = inject(ElementRef);
+  readonly el = inject(ElementRef);
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
