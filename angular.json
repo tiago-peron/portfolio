@@ -61,7 +61,7 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "portfilio:build:production"
+              "buildTarget": "portfolio:build:production"
             },
             "development": {
               "buildTarget": "portfolio:build:development"
